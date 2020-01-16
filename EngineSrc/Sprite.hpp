@@ -5,11 +5,14 @@
 #pragma once
 
 
+#include <glad/glad.h>
+
 class Sprite {
 
 private:
     int _width;
     int _height;
 
+    GLuint vertexArray;
 };
 
