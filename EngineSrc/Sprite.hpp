@@ -6,6 +6,8 @@
 
 
 #include <glad/glad.h>
+#include <string>
+#include "Texture2D.hpp"
 
 struct Sprite {
 
@@ -13,7 +15,7 @@ struct Sprite {
 
     ~Sprite();
 
-    void Init(float x, float y, float width, float height);
+    void Init(float x, float y, float width, float height, const std::string &texturePath);
 
     void Draw();
 
@@ -24,5 +26,7 @@ private:
     GLuint _vertexArray;
     GLuint _vertexBuffer;
     GLuint _indexBuffer;
+
+    Texture2D _texture;
 };
 
