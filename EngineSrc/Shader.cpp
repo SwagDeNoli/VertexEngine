@@ -6,6 +6,7 @@
 #include <sstream>
 #include <iostream>
 #include "Shader.hpp"
+#include "IOManager.hpp"
 
 static void CheckShaderError(GLuint shader, GLuint flag, bool isProgram, const std::string &errorMessage);
 
@@ -62,19 +63,12 @@ GLuint CreateShader(const std::string &text, GLenum shaderType) {
 }
 
 std::string LoadShader(const std::string &fileName) {
-    std::ifstream file;
-    file.open(fileName);
 
-    std::string line;
     std::string output;
-
-    if (file.is_open()) {
-        while (file.good()) {
-            std::getline(file, line);
-            output.append(line + "\n");
-        }
+    bool success = IOManager::ReadFileToString(fileName, output);
+    if (!success) {
+        std::cout << "Could not read shader file: " << fileName << std::endl;
     }
-
     return output;
 }
 
