@@ -7,12 +7,22 @@
 
 #include <glad/glad.h>
 
-class Sprite {
+struct Sprite {
+
+    Sprite();
+
+    ~Sprite();
+
+    void Init(float x, float y, float width, float height);
+
+    void Draw();
 
 private:
-    int _width;
-    int _height;
+    float _x, _y;
+    float _width, _height;
 
-    GLuint vertexArray;
+    GLuint _vertexArray;
+    GLuint _vertexBuffer;
+    GLuint _indexBuffer;
 };
 
