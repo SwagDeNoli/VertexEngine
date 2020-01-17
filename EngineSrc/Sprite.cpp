@@ -35,6 +35,11 @@ void Sprite::Init(float x, float y, float width, float height) {
     vertices[2].color = glm::vec3(0, 0, 1);
     vertices[3].color = glm::vec3(0, 1, 1);
 
+    vertices[0].uv = glm::vec2(0, 1);
+    vertices[1].uv = glm::vec2(1, 1);
+    vertices[2].uv = glm::vec2(1, 0);
+    vertices[3].uv = glm::vec2(0, 0);
+
     GLuint indices[6] = {
             0, 1, 2,
             0, 2, 3
@@ -48,6 +53,8 @@ void Sprite::Init(float x, float y, float width, float height) {
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid *) offsetof(Vertex, color));
     glEnableVertexAttribArray(1);
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid *) offsetof(Vertex, uv));
+    glEnableVertexAttribArray(2);
 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, _indexBuffer);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);

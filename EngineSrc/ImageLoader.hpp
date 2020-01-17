@@ -8,6 +8,6 @@
 
 struct ImageLoader {
 
-    Texture2D LoadImage(const std::string &imagePath);
+    static Texture2D LoadImage(const std::string &imagePath);
 
 };

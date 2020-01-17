@@ -2,10 +2,10 @@
 // Created by User2 on 1/17/2020.
 //
 
+#pragma once
 #include <glad/glad.h>
 
 struct Texture2D {
-
     int GetWidth() const {
         return _width;
     }
