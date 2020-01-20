@@ -5,7 +5,7 @@
 #pragma once
 
 #include <string>
-#include "glad/glad.h"
+#include <glad/glad.h>
 
 
 struct Shader {
@@ -18,6 +18,10 @@ struct Shader {
 
     GLuint vertShader;
     GLuint fragShader;
+
+    GLuint GetId() {
+        return _id;
+    }
 
 private:
     GLuint _id;
