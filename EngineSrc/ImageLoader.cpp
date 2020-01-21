@@ -10,8 +10,8 @@ Texture2D ImageLoader::LoadImage(const std::string &imagePath) {
     Texture2D newTexture{};
     int width, height, numOfChannels;
 
-    glGenTextures(1, &newTexture._textureId);
-    glBindTexture(GL_TEXTURE_2D, newTexture._textureId);
+    glGenTextures(1, &newTexture.textureId);
+    glBindTexture(GL_TEXTURE_2D, newTexture.textureId);
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -26,8 +26,8 @@ Texture2D ImageLoader::LoadImage(const std::string &imagePath) {
         std::cout << "Error! Image: " << imageData << " could not be loaded";
     }
 
-    newTexture.SetWidth(width);
-    newTexture.SetHeight(height);
+    newTexture.width = width;
+    newTexture.height = height;
 
     stbi_image_free(imageData);
 

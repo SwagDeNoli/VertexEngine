@@ -27,5 +27,7 @@ private:
     GLuint _vertexBuffer;
     GLuint _indexBuffer;
 
+    Texture2D _texture;
+
 };
 

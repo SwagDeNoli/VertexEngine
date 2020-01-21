@@ -5,7 +5,7 @@
 #include <Sprite.hpp>
 #include <Vertex.hpp>
 #include <Texture2D.hpp>
-#include <ResourceManager.hpp>
+#include "ResourceManager.hpp"
 
 Sprite::Sprite() : _vertexArray(0), _vertexBuffer(0), _indexBuffer(0) {
 
@@ -21,6 +21,7 @@ void Sprite::Init(float x, float y, float width, float height, const std::string
     _width = width;
     _height = height;
 
+    _texture = ResourceManager::instance().GetTexture(texturePath);
 
     glGenVertexArrays(1, &_vertexArray);
     glGenBuffers(1, &_vertexBuffer);
@@ -68,6 +69,7 @@ void Sprite::Init(float x, float y, float width, float height, const std::string
 }
 
 void Sprite::Draw() {
+    glBindTexture(GL_TEXTURE_2D, _texture.textureId);
     glBindVertexArray(_vertexArray);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
 }
