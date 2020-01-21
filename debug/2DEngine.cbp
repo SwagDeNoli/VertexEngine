@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="2DEngine"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/User2/Documents/2DEngine/debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VertexEngine">
+				<Option output="C:/Users/User2/Documents/2DEngine/debug/libVertexEngine.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/User2/Documents/2DEngine/debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/User2/Documents/2DEngine/EngineSrc"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 VertexEngine"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="VertexEngine/fast">
+				<Option output="C:/Users/User2/Documents/2DEngine/debug/libVertexEngine.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/User2/Documents/2DEngine/debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/User2/Documents/2DEngine/EngineSrc"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 VertexEngine/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/User2/Documents/2DEngine/debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2DEngine">
+				<Option output="C:/Users/User2/Documents/2DEngine/debug/2DEngine.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/User2/Documents/2DEngine/debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/User2/Documents/2DEngine/EngineSrc"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 2DEngine"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="2DEngine/fast">
+				<Option output="C:/Users/User2/Documents/2DEngine/debug/2DEngine.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/User2/Documents/2DEngine/debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/User2/Documents/2DEngine/EngineSrc"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/x86_64-w64-mingw32"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../include"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/include-fixed"/>
+					<Add directory="C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/9.2.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 2DEngine/fast"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/User2/Documents/2DEngine/debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/msys64/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/User2/Documents/2DEngine/debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Camera2D.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Camera2D.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/IOManager.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/IOManager.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/ImageLoader.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/ImageLoader.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/KHR/khrplatform.h">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/ResourceManager.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/ResourceManager.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Shader.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Shader.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Sprite.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Sprite.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Texture2D.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Texture2D.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/TextureCache.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/TextureCache.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Utility/stb_image.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Utility/stb_image.h">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Vertex.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Vertex.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Window.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Window.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/glad.c">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/glad/glad.h">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/src/MainGame.cpp">
+			<Option target="2DEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/src/MainGame.hpp">
+			<Option target="2DEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/src/main.cpp">
+			<Option target="2DEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

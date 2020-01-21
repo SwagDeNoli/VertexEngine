@@ -24,6 +24,8 @@ struct Window {
 
     static void FramebufferSizeCallback(GLFWwindow *window, int width, int height);
 
+    void UpdateFPSCounter(GLFWwindow *window);
+
 private:
     GLFWwindow *_window;
 

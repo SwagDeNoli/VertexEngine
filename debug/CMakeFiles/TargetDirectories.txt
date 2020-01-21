@@ -1,0 +1,4 @@
+C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/VertexEngine.dir
+C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/rebuild_cache.dir
+C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/2DEngine.dir
+C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/edit_cache.dir

@@ -12,7 +12,9 @@ Sprite::Sprite() : _vertexArray(0), _vertexBuffer(0), _indexBuffer(0) {
 }
 
 Sprite::~Sprite() {
-
+    glDeleteBuffers(1, &_indexBuffer);
+    glDeleteBuffers(1, &_vertexBuffer);
+    glDeleteVertexArrays(1, &_vertexArray);
 }
 
 void Sprite::Init(float x, float y, float width, float height, const std::string &texturePath) {

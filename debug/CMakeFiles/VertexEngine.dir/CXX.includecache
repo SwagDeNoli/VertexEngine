@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../EngineSrc/KHR/khrplatform.h
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+
+C:/Users/User2/Documents/2DEngine/EngineSrc/Window.cpp
+iostream
+-
+Window.hpp
+C:/Users/User2/Documents/2DEngine/EngineSrc/Window.hpp
+
+C:/Users/User2/Documents/2DEngine/EngineSrc/Window.hpp
+glad/glad.h
+C:/Users/User2/Documents/2DEngine/EngineSrc/glad/glad.h
+glfw/glfw3.h
+-
+string
+-
+
+C:/Users/User2/Documents/2DEngine/EngineSrc/glad/glad.h
+KHR/khrplatform.h
+-
+
