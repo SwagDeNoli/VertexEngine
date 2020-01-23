@@ -75,12 +75,12 @@ preinstall:
 CMakeFiles/VertexEngine.dir/all:
 	$(MAKE) -f CMakeFiles\VertexEngine.dir\build.make CMakeFiles/VertexEngine.dir/depend
 	$(MAKE) -f CMakeFiles\VertexEngine.dir\build.make CMakeFiles/VertexEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User2\Documents\2DEngine\debug\CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target VertexEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User2\Documents\2DEngine\debug\CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target VertexEngine"
 .PHONY : CMakeFiles/VertexEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/VertexEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User2\Documents\2DEngine\debug\CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User2\Documents\2DEngine\debug\CMakeFiles 14
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/VertexEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User2\Documents\2DEngine\debug\CMakeFiles 0
 .PHONY : CMakeFiles/VertexEngine.dir/rule
@@ -107,7 +107,7 @@ CMakeFiles/2DEngine.dir/all: CMakeFiles/VertexEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/2DEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User2\Documents\2DEngine\debug\CMakeFiles 16
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User2\Documents\2DEngine\debug\CMakeFiles 17
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/2DEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User2\Documents\2DEngine\debug\CMakeFiles 0
 .PHONY : CMakeFiles/2DEngine.dir/rule

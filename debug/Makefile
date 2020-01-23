@@ -297,6 +297,33 @@ EngineSrc/Sprite.cpp.s:
 	$(MAKE) -f CMakeFiles\VertexEngine.dir\build.make CMakeFiles/VertexEngine.dir/EngineSrc/Sprite.cpp.s
 .PHONY : EngineSrc/Sprite.cpp.s
 
+EngineSrc/SpriteBatch.obj: EngineSrc/SpriteBatch.cpp.obj
+
+.PHONY : EngineSrc/SpriteBatch.obj
+
+# target to build an object file
+EngineSrc/SpriteBatch.cpp.obj:
+	$(MAKE) -f CMakeFiles\VertexEngine.dir\build.make CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.obj
+.PHONY : EngineSrc/SpriteBatch.cpp.obj
+
+EngineSrc/SpriteBatch.i: EngineSrc/SpriteBatch.cpp.i
+
+.PHONY : EngineSrc/SpriteBatch.i
+
+# target to preprocess a source file
+EngineSrc/SpriteBatch.cpp.i:
+	$(MAKE) -f CMakeFiles\VertexEngine.dir\build.make CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.i
+.PHONY : EngineSrc/SpriteBatch.cpp.i
+
+EngineSrc/SpriteBatch.s: EngineSrc/SpriteBatch.cpp.s
+
+.PHONY : EngineSrc/SpriteBatch.s
+
+# target to generate assembly for a file
+EngineSrc/SpriteBatch.cpp.s:
+	$(MAKE) -f CMakeFiles\VertexEngine.dir\build.make CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.s
+.PHONY : EngineSrc/SpriteBatch.cpp.s
+
 EngineSrc/Texture2D.obj: EngineSrc/Texture2D.cpp.obj
 
 .PHONY : EngineSrc/Texture2D.obj
@@ -541,6 +568,9 @@ help:
 	@echo ... EngineSrc/Sprite.obj
 	@echo ... EngineSrc/Sprite.i
 	@echo ... EngineSrc/Sprite.s
+	@echo ... EngineSrc/SpriteBatch.obj
+	@echo ... EngineSrc/SpriteBatch.i
+	@echo ... EngineSrc/SpriteBatch.s
 	@echo ... EngineSrc/Texture2D.obj
 	@echo ... EngineSrc/Texture2D.i
 	@echo ... EngineSrc/Texture2D.s

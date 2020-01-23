@@ -224,6 +224,20 @@ CMakeFiles/VertexEngine.dir/EngineSrc/ResourceManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VertexEngine.dir/EngineSrc/ResourceManager.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User2\Documents\2DEngine\EngineSrc\ResourceManager.cpp -o CMakeFiles\VertexEngine.dir\EngineSrc\ResourceManager.cpp.s
 
+CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.obj: CMakeFiles/VertexEngine.dir/flags.make
+CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.obj: CMakeFiles/VertexEngine.dir/includes_CXX.rsp
+CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.obj: ../EngineSrc/SpriteBatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User2\Documents\2DEngine\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\VertexEngine.dir\EngineSrc\SpriteBatch.cpp.obj -c C:\Users\User2\Documents\2DEngine\EngineSrc\SpriteBatch.cpp
+
+CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User2\Documents\2DEngine\EngineSrc\SpriteBatch.cpp > CMakeFiles\VertexEngine.dir\EngineSrc\SpriteBatch.cpp.i
+
+CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User2\Documents\2DEngine\EngineSrc\SpriteBatch.cpp -o CMakeFiles\VertexEngine.dir\EngineSrc\SpriteBatch.cpp.s
+
 # Object files for target VertexEngine
 VertexEngine_OBJECTS = \
 "CMakeFiles/VertexEngine.dir/EngineSrc/glad.c.obj" \
@@ -237,7 +251,8 @@ VertexEngine_OBJECTS = \
 "CMakeFiles/VertexEngine.dir/EngineSrc/Texture2D.cpp.obj" \
 "CMakeFiles/VertexEngine.dir/EngineSrc/Camera2D.cpp.obj" \
 "CMakeFiles/VertexEngine.dir/EngineSrc/TextureCache.cpp.obj" \
-"CMakeFiles/VertexEngine.dir/EngineSrc/ResourceManager.cpp.obj"
+"CMakeFiles/VertexEngine.dir/EngineSrc/ResourceManager.cpp.obj" \
+"CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.obj"
 
 # External object files for target VertexEngine
 VertexEngine_EXTERNAL_OBJECTS =
@@ -254,9 +269,10 @@ libVertexEngine.a: CMakeFiles/VertexEngine.dir/EngineSrc/Texture2D.cpp.obj
 libVertexEngine.a: CMakeFiles/VertexEngine.dir/EngineSrc/Camera2D.cpp.obj
 libVertexEngine.a: CMakeFiles/VertexEngine.dir/EngineSrc/TextureCache.cpp.obj
 libVertexEngine.a: CMakeFiles/VertexEngine.dir/EngineSrc/ResourceManager.cpp.obj
+libVertexEngine.a: CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.obj
 libVertexEngine.a: CMakeFiles/VertexEngine.dir/build.make
 libVertexEngine.a: CMakeFiles/VertexEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User2\Documents\2DEngine\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libVertexEngine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User2\Documents\2DEngine\debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libVertexEngine.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\VertexEngine.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\VertexEngine.dir\link.txt --verbose=$(VERBOSE)
 

@@ -169,6 +169,12 @@
 		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Sprite.hpp">
 			<Option target="VertexEngine"/>
 		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/SpriteBatch.cpp">
+			<Option target="VertexEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/SpriteBatch.hpp">
+			<Option target="VertexEngine"/>
+		</Unit>
 		<Unit filename="C:/Users/User2/Documents/2DEngine/EngineSrc/Texture2D.cpp">
 			<Option target="VertexEngine"/>
 		</Unit>

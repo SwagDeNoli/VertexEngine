@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/VertexEngine.dir/EngineSrc/ResourceManager.cpp.obj"
   "CMakeFiles/VertexEngine.dir/EngineSrc/Shader.cpp.obj"
   "CMakeFiles/VertexEngine.dir/EngineSrc/Sprite.cpp.obj"
+  "CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.obj"
   "CMakeFiles/VertexEngine.dir/EngineSrc/Texture2D.cpp.obj"
   "CMakeFiles/VertexEngine.dir/EngineSrc/TextureCache.cpp.obj"
   "CMakeFiles/VertexEngine.dir/EngineSrc/Utility/stb_image.cpp.obj"

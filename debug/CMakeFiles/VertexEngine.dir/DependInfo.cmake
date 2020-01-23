@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/User2/Documents/2DEngine/EngineSrc/ResourceManager.cpp" "C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/VertexEngine.dir/EngineSrc/ResourceManager.cpp.obj"
   "C:/Users/User2/Documents/2DEngine/EngineSrc/Shader.cpp" "C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/VertexEngine.dir/EngineSrc/Shader.cpp.obj"
   "C:/Users/User2/Documents/2DEngine/EngineSrc/Sprite.cpp" "C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/VertexEngine.dir/EngineSrc/Sprite.cpp.obj"
+  "C:/Users/User2/Documents/2DEngine/EngineSrc/SpriteBatch.cpp" "C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/VertexEngine.dir/EngineSrc/SpriteBatch.cpp.obj"
   "C:/Users/User2/Documents/2DEngine/EngineSrc/Texture2D.cpp" "C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/VertexEngine.dir/EngineSrc/Texture2D.cpp.obj"
   "C:/Users/User2/Documents/2DEngine/EngineSrc/TextureCache.cpp" "C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/VertexEngine.dir/EngineSrc/TextureCache.cpp.obj"
   "C:/Users/User2/Documents/2DEngine/EngineSrc/Utility/stb_image.cpp" "C:/Users/User2/Documents/2DEngine/debug/CMakeFiles/VertexEngine.dir/EngineSrc/Utility/stb_image.cpp.obj"
