@@ -19,12 +19,14 @@ void SpriteBatch::Init() {
 
 void SpriteBatch::Begin(GlyphSortTypes sortType /*= GlyphSortTypes::TEXTURE*/) {
     _sortType = sortType;
+    _renderBatches.clear();
+    _glyphs.clear();
+
 }
 
 void SpriteBatch::End() {
     SortGlyphs();
-
-
+    CreateRenderBatches();
 }
 
 void
@@ -58,10 +60,63 @@ SpriteBatch::Draw(const glm::vec2 &position, const glm::vec2 &dimensions, const 
 
 void SpriteBatch::RenderBatches() {
 
+    glBindVertexArray(_vertexArray);
+
+    for (int i = 0; i < _renderBatches.size(); ++i) {
+        glBindTexture(GL_TEXTURE_2D, _renderBatches[i].texture);
+
+        glDrawArrays(GL_TRIANGLES, _renderBatches[i].offset, _renderBatches[i].numOfVertices);
+    }
+
+    glBindVertexArray(0);
 }
 
 void SpriteBatch::CreateRenderBatches() {
 
+    std::vector<Vertex> vertices;
+    vertices.reserve(_glyphs.size() * 6);
+
+    if (_glyphs.empty())
+        return;
+
+    int offset = 0;
+    int currentVertex = 0;
+    _renderBatches.emplace_back(offset, 6, _glyphs[0]->texture);
+
+    vertices[currentVertex++] = _glyphs[0]->topLeft;
+    vertices[currentVertex++] = _glyphs[0]->topRight;
+    vertices[currentVertex++] = _glyphs[0]->bottomRight;
+    vertices[currentVertex++] = _glyphs[0]->topLeft;
+    vertices[currentVertex++] = _glyphs[0]->bottomRight;
+    vertices[currentVertex++] = _glyphs[0]->bottomLeft;
+
+    offset += 6;
+
+    for (int currentGlyph = 0; currentGlyph < _glyphs.size(); currentGlyph++) {
+
+        if (_glyphs[currentGlyph]->texture != _glyphs[currentGlyph - 1]->texture) {
+            _renderBatches.emplace_back(offset, 6, _glyphs[currentGlyph]->texture);
+        } else {
+            _renderBatches.back().numOfVertices += 6;
+        }
+
+        vertices[currentVertex++] = _glyphs[currentGlyph]->topLeft;
+        vertices[currentVertex++] = _glyphs[currentGlyph]->topRight;
+        vertices[currentVertex++] = _glyphs[currentGlyph]->bottomRight;
+        vertices[currentVertex++] = _glyphs[currentGlyph]->topLeft;
+        vertices[currentVertex++] = _glyphs[currentGlyph]->bottomRight;
+        vertices[currentVertex++] = _glyphs[currentGlyph]->bottomLeft;
+
+        offset += 6;
+    }
+
+    glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
+    //orphan the buffer
+    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex), nullptr, GL_DYNAMIC_DRAW);
+    //upload the data
+    glBufferSubData(GL_ARRAY_BUFFER, 0, vertices.size() * sizeof(Vertex), vertices.data());
+
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
 void SpriteBatch::CreateVertexArray() {

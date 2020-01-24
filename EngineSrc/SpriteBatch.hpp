@@ -28,6 +28,12 @@ struct Glyph {
 };
 
 struct RenderBatch {
+
+    RenderBatch(GLuint offSet, GLuint numOfVerts, GLuint textureId) : offset(offSet), numOfVertices(numOfVerts),
+                                                                      texture(textureId) {
+
+    }
+
     GLuint offset;
     GLuint numOfVertices;
     GLuint texture;

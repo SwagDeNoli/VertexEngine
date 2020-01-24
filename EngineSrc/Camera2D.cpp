@@ -19,7 +19,7 @@ void Camera2D::Init(int screenWidth, int screenHeight) {
     _screenHeight = screenHeight;
 
     _orthoMatrix = glm::ortho(-(_screenWidth / 2.0f), (_screenWidth / 2.0f), -(_screenHeight / 2.0f),
-                              (_screenHeight / 2.0f));
+                              (_screenHeight / 2.0f), -1.f, 100.f);
 }
 
 void Camera2D::Update() {
@@ -27,8 +27,8 @@ void Camera2D::Update() {
         glm::vec3 translate(-_position.x, -_position.y, 0.f);
         glm::vec3 scale(_scale, _scale, 0.f);
 
-        _cameraMatrix = glm::translate(_orthoMatrix, translate);
         _cameraMatrix = glm::scale(_cameraMatrix, scale);
+        _cameraMatrix = glm::translate(_orthoMatrix, translate);
         _update = false;
     }
 }

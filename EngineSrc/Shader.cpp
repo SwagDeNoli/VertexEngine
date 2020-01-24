@@ -5,6 +5,7 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include <glm/gtc/type_ptr.hpp>
 #include "Shader.hpp"
 #include "IOManager.hpp"
 
@@ -91,4 +92,8 @@ void CheckShaderError(GLuint shader, GLuint flag, bool isProgram, const std::str
 
         std::cout << errorMessage << ": " << error << "'" << std::endl;
     }
+}
+
+void Shader::SetUniformMat4(const std::string &uniformName, const glm::mat4 &matrix4) {
+    glUniformMatrix4fv(glGetUniformLocation(_id, uniformName.c_str()), 1, GL_FALSE, glm::value_ptr(matrix4));
 }

@@ -6,6 +6,7 @@
 
 #include <string>
 #include <glad/glad.h>
+#include <glm/glm.hpp>
 
 
 struct Shader {
@@ -19,9 +20,11 @@ struct Shader {
     GLuint vertShader;
     GLuint fragShader;
 
-    GLuint GetId() {
+    inline GLuint GetId() {
         return _id;
     }
+
+    void SetUniformMat4(const std::string &uniformName, const glm::mat4 &matrix4);
 
 private:
     GLuint _id;
